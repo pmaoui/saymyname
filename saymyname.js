@@ -1,6 +1,9 @@
-"use strict";
 
 function SayMyName(fullname, name) {
+
+  if (typeof this != "object") {
+    throw new Error("SayMyName needs to be instanciated with new. new SayMyName(.)");
+  }
 
   if (name == null) {
     this.firstname = parseFirstName(fullname.split(' ')[0]);
@@ -46,7 +49,7 @@ var elts = [
 var uppercase = function(name) {
   // if the name contains an hyphen
   if (name.indexOf('-') != -1) {
-    return uppercase(name.split('-')[0]) + uppercase(name.split('-')[1])
+    return uppercase(name.split('-')[0]) + '-' + uppercase(name.split('-')[1])
   }
   return name.charAt(0).toUpperCase() + name.substr(1).toLowerCase();
 }
@@ -67,6 +70,7 @@ var parseName = function(name,parts) {
   }
 
   if (name == '') {
+    // specially for d' or l', avoid a space after
     return parts.join(' ').split("' ").join("'");
   }
 
@@ -75,7 +79,7 @@ var parseName = function(name,parts) {
 
   for (var i = 0; i < elts.length; i++) {
 
-    var e        = elts[i];
+    var e = elts[i];
 
     // if elts has caps, we match the exact term
     var withCase = e.match(/[A-Z]/) != null;
@@ -102,3 +106,4 @@ if (typeof module != 'undefined' && !module.nodeType && module.exports) {
 else {
   root.SayMyName = SayMyName;
 }
+
