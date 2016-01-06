@@ -2,7 +2,7 @@ SayMyName let you split human name (into firstname and name) and aim to return t
 
 ## Installation
 
-Directly with npm :
+With npm
 
 ```bash
 npm install saymyname
@@ -18,27 +18,21 @@ In a browser
 
 var myName = new SayMyName("jean de la fontaine");
 
-console.log(myName.humanize());
-//return Jean de La Fontaine
+console.log(myName.humanize()); //return Jean de La Fontaine
 
-console.log(myName.firstname);
-//return Jean
+console.log(myName.firstname); //return Jean
 
-console.log (myName.name);
-//return de La Fontaine
+console.log (myName.name); //return de La Fontaine
 
 /*****************************/
 
 var myName = new SayMyName("JEAN BAPTISE","POQUELIN");
 
-console.log(myName.humanize());
-//return Jean-Baptiste Poquelin
+console.log(myName.humanize()); //return Jean-Baptiste Poquelin
 
-console.log(myName.firstname);
-//return Jean-Baptise
+console.log(myName.firstname); //return Jean-Baptise
 
-console.log (myName.name);
-//return Poquelin
+console.log (myName.name); //return Poquelin
 
 
 ```
