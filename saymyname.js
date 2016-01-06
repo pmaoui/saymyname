@@ -1,19 +1,17 @@
 "use strict";
 
-class SayMyName {
+function SayMyName(fullname, name) {
 
-  constructor(fullname, name) {
-    if (name == null) {
-      this.firstname = parseFirstName(fullname.split(' ')[0]);
-      this.name      = parseName(fullname.slice(this.firstname.length));
-    }
-    else {
-      this.firstname = parseFirstName(fullname);
-      this.name      = parseName(name);
-    }
+  if (name == null) {
+    this.firstname = parseFirstName(fullname.split(' ')[0]);
+    this.name      = parseName(fullname.slice(this.firstname.length));
+  }
+  else {
+    this.firstname = parseFirstName(fullname);
+    this.name      = parseName(name);
   }
 
-  humanize() {
+  this.humanize = function() {
     return this.firstname + ' ' + this.name;
   }
 
@@ -104,4 +102,3 @@ if (typeof module != 'undefined' && !module.nodeType && module.exports) {
 else {
   root.SayMyName = SayMyName;
 }
-
