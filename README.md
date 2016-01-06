@@ -1,4 +1,4 @@
-SayMyName let you split human name (into firstname and name) and aim to return the correct letter case.
+SayMyName let you split human name (into firstname and name) and aims to return the correct letter case.
 
 ## Installation
 
