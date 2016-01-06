@@ -16,23 +16,23 @@ In a browser
 ## Usage
 ```javascript
 
+// full name constructor
 var myName = new SayMyName("jean de la fontaine");
 
-console.log(myName.humanize()); //return Jean de La Fontaine
+console.log(myName.humanize()); //return "Jean de La Fontaine"
 
-console.log(myName.firstname); //return Jean
+console.log(myName.firstname); //return "Jean"
 
-console.log (myName.name); //return de La Fontaine
+console.log (myName.name); //return "de La Fontaine"
 
-/*****************************/
-
+// firstname + name constructor
 var myName = new SayMyName("JEAN BAPTISE","POQUELIN");
 
-console.log(myName.humanize()); //return Jean-Baptiste Poquelin
+console.log(myName.humanize()); //return "Jean-Baptiste Poquelin"
 
-console.log(myName.firstname); //return Jean-Baptise
+console.log(myName.firstname); //return "Jean-Baptise"
 
-console.log (myName.name); //return Poquelin
+console.log (myName.name); //return "Poquelin"
 
 
 ```

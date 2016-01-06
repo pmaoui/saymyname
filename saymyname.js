@@ -26,7 +26,7 @@ class SayMyName {
  */
 
 var elts = [
-  "De", // can be with a cap (neerland)
+  "De", // can be with a cap (Netherlands)
   "de", // lot of countries
   "le", // french
   "du", // french
