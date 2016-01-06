@@ -11,6 +11,8 @@ npm install saymyname
 In a browser
 ```html
 <script type="text/javascript" src="saymyname.js"></script>
+<!-- OR -->
+<script type="text/javascript" src="saymyname.min.js"></script>
 ```
 
 ## Usage
