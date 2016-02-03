@@ -5,6 +5,10 @@ function SayMyName(fullname, name) {
     throw new Error("SayMyName needs to be instanciated with new. new SayMyName(.)");
   }
 
+  if (fullname == null) {
+    return '';
+  }
+
   if (name == null) {
     this.firstname = parseFirstName(fullname.split(' ')[0]);
     this.name      = parseName(fullname.slice(this.firstname.length));
