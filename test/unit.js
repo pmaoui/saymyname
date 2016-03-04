@@ -15,6 +15,11 @@ QUnit.test("Names", function( assert ) {
     {
       "fullname" : "pedro suárez-llanos",
       "shouldBe" : "Pedro Suárez-Llanos"
+    },
+    {
+      "firstname" : "Charles",
+      "name"      : "des lombrières",
+      "shouldBe"  : "Charles des Lombrières"
     }
   ];
 

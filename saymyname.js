@@ -31,6 +31,7 @@ function SayMyName(fullname, name) {
  */
 
 var elts = [
+  "des",
   "De", // can be with a cap (Netherlands)
   "de", // lot of countries
   "le", // french
@@ -46,8 +47,7 @@ var elts = [
   "te",
   "zu",
   "of",
-  "af",
-  "des"
+  "af"
 ];
 
 var uppercase = function(name) {
