@@ -85,10 +85,12 @@ var parseName = function(name,parts) {
 
     var e = elts[i];
 
-    // if elts has caps, we match the exact term
-    var withCase = e.match(/[A-Z]/) != null;
+    // space after a nobiliary particle if it is not a quote (l', d' etc)
+    var separator = e.slice(-1) == "'" ? '' : ' ';
 
-    if ((withCase ? name : name.toLowerCase()).indexOf(e) == 0) {
+    // if elts has caps, we match the exact term
+    var withCase = e.match(/[A-Z]/) != null; 
+    if ((withCase ? name : name.toLowerCase()).indexOf(e+separator) == 0) {
       return parseName( name.slice(e.length), parts.concat(withCase ? uppercase(e) : e) );
     }
 
