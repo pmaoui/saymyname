@@ -30,6 +30,15 @@ QUnit.test("Names", function( assert ) {
       "firstname" : "Paolo",
       "name"      : "d'alcino",
       "shouldBe"  : "Paolo d'Alcino"
+    },
+    {
+      "firstname" : "Test1",
+      "name"      : "test1",
+      "shouldBe"  : "Test1 Test1"
+    },
+    {
+      "fullname" : "test",
+      "shouldBe" : "Test"
     }
   ];
 
