@@ -19,7 +19,8 @@ function SayMyName(fullname, name) {
   }
 
   this.humanize = function() {
-    return this.firstname + ' ' + this.name;
+    var humanName = this.firstname + ' ' + this.name;
+    return humanName.trim();
   }
 
 }
