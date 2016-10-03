@@ -23,7 +23,7 @@
     "human name"
   ],
   "devDependencies": {
-    "qunitjs": "^1.20.0",
+    "qunit-cli": "^0.2.0",
     "uglify-js": "^2.6.1"
   }
 }
