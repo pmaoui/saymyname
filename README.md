@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/poupougnac/saymyname.svg?branch=master)](https://travis-ci.org/poupougnac/saymyname)
+
 SayMyName let you split human name (into firstname and name) and aims to return the correct letter case.
 
 ## Installation
