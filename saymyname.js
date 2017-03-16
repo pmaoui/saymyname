@@ -1,7 +1,7 @@
 
 function SayMyName(fullname, name) {
 
-  if (typeof this != "object") {
+  if (typeof this !== "object") {
     throw new Error("SayMyName needs to be instanciated with new. new SayMyName(.)");
   }
 
@@ -53,7 +53,7 @@ var elts = [
 
 var uppercase = function(name) {
   // if the name contains an hyphen
-  if (name.indexOf('-') != -1) {
+  if (name.indexOf('-') !== -1) {
     return uppercase(name.split('-')[0]) + '-' + uppercase(name.split('-')[1])
   }
   return name.charAt(0).toUpperCase() + name.substr(1).toLowerCase();
@@ -74,7 +74,7 @@ var parseName = function(name,parts) {
     parts = [];
   }
 
-  if (name == '') {
+  if (name === '') {
     // specially for d' or l', avoid a space after
     return parts.join(' ').split("' ").join("'");
   }
@@ -91,7 +91,7 @@ var parseName = function(name,parts) {
 
     // if elts has caps, we match the exact term
     var withCase = e.match(/[A-Z]/) != null; 
-    if ((withCase ? name : name.toLowerCase()).indexOf(e+separator) == 0) {
+    if ((withCase ? name : name.toLowerCase()).indexOf(e+separator) === 0) {
       return parseName( name.slice(e.length), parts.concat(withCase ? uppercase(e) : e) );
     }
 
