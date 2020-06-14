@@ -4,8 +4,7 @@
   "description": "Lexer for parsing human people name",
   "main": "index.js",
   "scripts": {
-    "test": "qunit-cli test/*.js",
-    "build": "uglifyjs --compress -o saymyname.min.js saymyname.js"
+    "test": "qunit-cli test/*.js"
   },
   "repository": {
     "type": "git",
@@ -26,7 +25,6 @@
     "eslint": "^7.2.0",
     "eslint-config-prettier": "^6.11.0",
     "prettier": "^2.0.5",
-    "qunit-cli": "^0.2.0",
-    "uglify-js": "^2.6.1"
+    "qunit-cli": "^0.2.0"
   }
 }
