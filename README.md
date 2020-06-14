@@ -19,14 +19,14 @@ In a browser
 ```javascript
 
 // full name constructor
-var myName = new SayMyName("jean de la fontaine");
+const myName = new SayMyName("jean de la fontaine");
 
 console.log(myName.humanize()); // return "Jean de La Fontaine"
 console.log(myName.firstname);  // return "Jean"
 console.log(myName.name);      // return "de La Fontaine"
 
 // firstname + name constructor
-var myName = new SayMyName("JEAN BAPTISE","POQUELIN");
+const myName = new SayMyName("JEAN BAPTISTE","POQUELIN");
 
 console.log(myName.humanize()); // return "Jean-Baptiste Poquelin"
 console.log(myName.firstname);  // return "Jean-Baptise"
