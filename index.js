@@ -1,1 +1,1 @@
-module.exports = require('./saymyname');
+module.exports = require('./saymyname')

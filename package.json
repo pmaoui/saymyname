@@ -23,6 +23,9 @@
     "human name"
   ],
   "devDependencies": {
+    "eslint": "^7.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "prettier": "^2.0.5",
     "qunit-cli": "^0.2.0",
     "uglify-js": "^2.6.1"
   }
