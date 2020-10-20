@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/poupougnac/saymyname.svg?branch=master)](https://travis-ci.org/poupougnac/saymyname)
 
-SayMyName lets you split human name (into firstname and name) and aims to return the correct letter case.
+SayMyName is a small library that do its best to let you split human name (into firstname and name) and aims to return the correct letter case.
 
 ## Installation
 
@@ -14,6 +14,9 @@ In a browser
 ```html
 <script type="text/javascript" src="saymyname.js"></script>
 ```
+
+## Demo
+You can play with the library [here](https://runkit.com/5f8ef73f7e694f001a39189a/5f8ef73fd36e2f001320264d).
 
 ## Usage
 ```javascript
